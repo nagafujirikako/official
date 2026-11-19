@@ -1,0 +1,319 @@
+
+/* ーーーーー ふわぁっと現れる ーーーーー */
+
+@keyframes fuwa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ーーーーー ロゴがドンッ！ ーーーーー */
+
+@keyframes don {
+  0% {
+    opacity: 0;
+    translate: 0 -200px;
+  }
+
+  25% {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  40% {
+    translate: 0 -45px;
+  }
+
+  55% {
+    translate: 0 0;
+  }
+
+  65% {
+    translate: 0 -20px;
+  }
+
+  75% {
+    translate: 0 0;
+  }
+
+  83% {
+    translate: 0 -7px;
+  }
+
+  92%, 100% {
+    translate: 0 0;
+  }
+}
+
+
+/* ーーーーー ヘッダーロゴ ーーーーー */
+
+.header .logo,
+.header .namae,
+.header .sumahonamae,
+.header .sikakunamae {
+  animation: don 1.4s linear both;
+}
+
+
+/* ーーーーー インスタ ーーーーー */
+
+.header .inst {
+  animation: fuwa 2.5s ease-in-out 0.3s both;
+}
+
+
+/* ーーーーー 説明文がゆらゆら ーーーーー */
+
+@keyframes moziYura {
+  0%, 100% {
+    transform: rotate(-8deg) translateY(0);
+  }
+
+  50% {
+    transform: rotate(-6deg) translateY(-5px);
+  }
+}
+
+
+/* ーーーーー スマホ画面 ーーーーー */
+
+@media screen and (max-width: 767px) {
+
+  /* ナビ */
+  header nav {
+    animation: fuwa 2.5s ease-in-out 0.3s both;
+  }
+
+  /* 説明文：ふわっと登場してからずっとゆらゆら */
+  main .kyoku {
+    animation:
+      fuwa 2.5s ease-in-out 0.5s both,
+      moziYura 1s ease-in-out 1s infinite;
+      transform-origin: center center;
+  }
+
+  /* 1枚目のアルバム */
+  #miren {
+    animation: fuwa 2.5s ease-in-out 0.7s both;
+  }
+
+  /* 2枚目のアルバム */
+  #guruguru {
+    animation: fuwa 2.5s ease-in-out 1.2s both;
+  }
+
+  /* 3枚目のアルバム */
+  #kyoumo {
+    animation: fuwa 2.5s ease-in-out 1.7s both;
+  }
+
+  /* フッター */
+  footer {
+    animation: fuwa 2.5s ease-in-out 2.2s both;
+  }
+
+}
+
+
+/* ーーーーー パソコン・正方形画面 ーーーーー */
+
+@media screen and (min-width: 768px) {
+
+  /* ナビ */
+  header nav {
+    z-index: 10;
+    animation: fuwa 2.5s ease-in-out 0.3s both;
+  }
+
+  /* ナビアイコンのホバー */
+  header nav .nav .icon {
+    transition: transform 0.5s ease;
+  }
+
+  header nav .nav:hover .icon {
+    transform: scale(1.5);
+  }
+
+  /* 上側のアルバム */
+  #miren,
+  #kyoumo {
+    animation: fuwa 2.5s ease-in-out 0.7s both;
+  }
+
+  /* 下側のアルバム */
+  #guruguru {
+    animation: fuwa 2.5s ease-in-out 1.2s both;
+  }
+
+  /* フッター */
+  footer {
+    animation: fuwa 2.5s ease-in-out 1.7s both;
+  }
+
+}
+
+
+/* ーーーーー ギターがゆらゆら ーーーーー */
+
+@keyframes guitarYura {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes guitarYuraSP {
+  0%, 100% {
+    transform: rotate(18deg);
+  }
+
+  50% {
+    transform: rotate(24deg);
+  }
+}
+
+/* パソコンのギター */
+@media screen and (min-width: 768px) {
+  footer .gt {
+    animation: guitarYura 2s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+/* スマホのギター */
+@media screen and (max-width: 767px) {
+  footer .gt {
+    animation: guitarYuraSP 2s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+
+/* -----------------おんぷ---------------------------- */
+
+/* 音符1：最後 */
+footer div img:first-child {
+  position: absolute;
+  top: 48%;
+  left: 45%;
+  width: 4%;
+  height: auto;
+  animation: onpu1 3.9s linear infinite;
+}
+
+/* 音符2：2番目 */
+footer div img:nth-child(2) {
+  position: absolute;
+  top: 60%;
+  left: 68%;
+  width: 3%;
+  height: auto;
+  animation: onpu2 3.9s linear infinite;
+}
+
+/* 音符3：最初 */
+footer div img:nth-child(3) {
+  position: absolute;
+  top: 72%;
+  left: 70%;
+  width: 5%;
+  height: auto;
+  animation: onpu3 3.9s linear infinite;
+}
+
+/* ③ 最初に左上へ流れる */
+/* ③ 左上に流れながら傾く */
+@keyframes onpu3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  6% {
+    opacity: 0.7;
+  }
+
+  20% {
+    opacity: 0.7;
+  }
+
+  58% {
+    opacity: 0;
+    transform: translate(-35px, -30px) rotate(-20deg);
+  }
+
+  58.01%, 100% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(deg);
+  }
+}
+
+@keyframes onpu2 {
+  0%, 33.33% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  39% {
+    opacity: 0.7;
+  }
+
+  53% {
+    opacity: 0.7;
+  }
+
+  91% {
+    opacity: 0;
+    transform: translate(-10px, -40px) rotate(20deg);
+  }
+
+  91.01%, 100% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes onpu1 {
+  0%, 66.66% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  72% {
+    opacity: 0.7;
+  }
+
+  86% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-20px, -30px) rotate(-20deg);
+  }
+}
+
+/* ーーーーー LIVE goods contactページ ふわっと表示 ーーーーー */
+
+.fuwamain {
+  animation: live-fuwa 3.5s ease-in-out both;
+}
+
+@keyframes live-fuwa {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAGAFUJI RIKAKO</title>
+
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animaeion.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- JavaScript -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="zenbu">
+
+        <!-- ヘッダー -->
+        <header>
+
+            <div class="header">
+
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+
+                <div class="namae">
+                    <a href="index.html">
+                        <img src="images/NAGAFUJI RIKAKO - OFFICIAL.svg" alt="永藤りかこ">
+                    </a>
+                </div>
+
+                <a href="index.html">
+                    <img src="images/sumahologo.png" alt="永藤りかこ" class="sumahonamae">
+                </a>
+
+                <a href="index.html">
+                    <img src="images/logo_seihoukei.png" alt="永藤りかこ" class="sikakunamae">
+                </a>
+
+                <div class="inst">
+                    <a href="https://www.instagram.com/rikaco16?obrf=MTNvMXphMHljNm1lcw%3D%3D&utm_source=qr">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- ナビゲーション -->
+            <nav>
+
+                <a href="https://music.apple.com/jp/new" class="nav">
+                    <span class="mozi">Music</span>
+                    <img src="images/music.svg" alt="" class="icon hp">
+                </a>
+
+                <a href="live.html" class="nav">
+                    <span class="mozi">Live</span>
+                    <img src="images/live.svg" alt="" class="icon">
+                </a>
+
+                <a href="goods.html" class="nav">
+                    <span class="mozi">Goods</span>
+                    <img src="images/goods.svg" alt="" class="icon">
+                </a>
+
+                <a href="contact.html" class="nav">
+                    <span class="mozi">Contact</span>
+                    <img src="images/contact.svg" alt="" class="icon">
+                </a>
+
+            </nav>
+
+        </header>
+
+
+        <!-- メイン -->
+        <main class="contact fuwamain">
+
+            <h1>CONTACT</h1>
+
+            <!-- お問い合わせフォーム -->
+            <form class="contact-form"
+                  action="https://formspree.io/f/xoeeevoq"
+                  method="POST">
+
+                <!-- お名前 -->
+                <div class="form-item">
+                    <label for="name">お名前</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           required>
+                </div>
+
+                <!-- メールアドレス -->
+                <div class="form-item">
+                    <label for="email">メールアドレス</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+                </div>
+
+                <!-- お問い合わせ内容 -->
+                <div class="form-item">
+                    <label for="message">お問い合わせ内容</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              required></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <button type="submit">送信する →</button>
+                <p id="form-message" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </main>
+
+
+        <!-- フッター -->
+        <footer>
+ <img src="images/guitar.png" alt="" class="gt">
+
+            <img src="images/nagafuzirikako.PNG" alt="" class="na">
+
+            <a href="https://www.instagram.com/rikaco16?obrf=MTNvMXphMHljNm1lcw%3D%3D&utm_source=qr" class="inst2"><img src="images/instagram.svg" alt=""></a>
+            <div>
+                <img src="images/onpu1.png" alt="">
+                <img src="images/onpu2 .png" alt="">
+                <img src="images/onpu3.png" alt="">
+               
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

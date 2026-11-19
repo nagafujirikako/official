@@ -1,0 +1,1360 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+nav {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+footer .inst2{
+display: none;
+}
+
+main .kyoku{
+  display: none;
+}
+
+footer div img {
+  animation: onpu-fade 4s ease-in-out infinite;
+}
+
+@keyframes onpu-fade {
+  0%, 100% {
+    opacity: 0.15;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+
+
+
+/* ーーーーーースマホ窓ーーーーーーーーーーーーーー */
+
+
+
+
+#sp-modal {
+  display: none;
+  position: fixed;
+  inset: 5%;
+  z-index: 9999;
+   background-image: url(../images/haikei_sumaho_kasi.png);
+  background-repeat: repeat;
+   box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+   border-radius: 15px;
+  overflow: hidden;
+
+  
+
+}
+
+#sp-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+
+  display: flex;
+justify-content: center;
+align-items: center;
+
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 10px;
+  border: 1px solid #9e8265;
+  background-color: #a78b6b ;
+
+  color: #fff9ed;
+  font-size: 24px;
+  cursor: pointer;
+
+  
+}
+
+#sp-close:active{
+  transform: scale(0.9);
+}
+
+
+
+#sp-play {
+  position: absolute;
+top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px 10px;
+  border-radius: 30px;
+
+  border: 1px solid #9e8265;
+  background-color: #fff9ed;
+  color: #705641;
+
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 0 3px 0 #b8a38b,
+  0 5px 8px rgba(0, 0, 0, 0.15);
+
+transition: 0.2s;
+}
+#sp-play:active {
+  box-shadow: 0 1px 0 #b8a38b;
+  transform: translateX(-50%) translateY(2px);
+}
+
+#sp-scroll {
+  width: 100%;
+  height: 95%;
+  overflow-y: auto;
+}
+
+#sp-kashi {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* ーーーーーーーーーーースマホーーーーーーーーーーーー */
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+  
+  
+  body .zenbu{
+   background-image: url(../images/haikei2.jpg);
+     background-size: cover ;
+      margin: auto;
+     overflow: hidden;
+  }
+  
+
+
+
+  /* ーーーーーーーヘッダーーーーーーーーーーーーーーーーーーー */
+  header .header{
+    padding: 60px;
+    position: static;
+  }
+  
+  header .namae{
+    display: none;
+  }
+
+  header .sikakunamae{
+    display: none;
+  }
+  
+  header .logo{
+    display: none;
+  }
+  
+  header .sumahonamae{
+    
+    height: auto;
+    margin: auto;
+  }
+  
+  header .inst{
+    display: none;
+  
+  }
+  
+
+  
+  /* ナビ全体 */
+  nav {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+  }
+  
+  /* 丸ボタン */
+  nav .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  
+    width: 18vw;
+    height: 18vw;
+    max-width: 85px;
+    max-height: 85px;
+  
+    border-radius: 50%;
+    background: #f7f3e9;
+  
+    box-shadow:
+      2px 5px 8px rgba(0, 0, 0, 0.5),
+  inset 0 3px 5px rgba(255, 255, 255, 1),
+  inset 0 -3px 5px rgba(120, 100, 80, 0.15);
+     
+  }
+
+  nav .nav:active {
+  transform: scale(0.9);
+}
+  
+  /* アイコン */
+  nav .icon {
+    width: 7vw;
+    height: 5vw;
+    margin: 0;
+    z-index: 2;
+  }
+  
+  /* 文字 */
+  nav .mozi {
+    font-size: clamp(8px, 2.5vw, 11px);
+    
+  }
+  
+  
+  /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+  
+
+
+
+  
+  
+  .kyokumei img:nth-child(2){
+    display: none;
+  }
+  
+main .kyoku {
+  display: block;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  color: #4b382b;
+
+  transform: rotate(-8deg);
+  margin: 10% 15% 0 0;
+  text-align: center;
+}
+  
+  
+  /* ーーーーーーーーーーーーーーーー未練ーーーーーーーーーーーー */
+  
+  
+  #miren{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 15px 0 10px 0;
+  }
+  
+  #miren .cd{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    margin: 30% 0 0 40%;
+    
+  }
+  
+  #miren .ao {
+    transform: rotate(-15deg);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+  #miren .ato {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 120%;
+    max-width: none;
+  }
+  
+  #miren .cd .mae{
+    display: none;
+  }
+  
+  #miren .cda{
+    width: 100%;
+    height: 30%;
+   
+  }
+  
+  #miren .kyokumei a{
+    display: inline-block;
+  }
+  
+  
+  #miren .omoi {
+    width: 65%;
+    max-width: 70%;
+    margin: 5px 15vw 0 15vw;
+  }
+  
+  #miren .mire {
+    width: 50%;
+    max-width: 55%;
+  margin: 0 25vw;
+  }
+  
+  #miren .kimi {
+    width: 85%;
+    max-width: 90%;
+    margin: 2px 0 0 15vw;
+   
+  }
+  
+  #miren .amen {
+    width: 35%;
+    max-width: 40%;
+  margin: 0 25vw;
+  }
+  
+  #miren .sono {
+    width: 60%;
+    max-width: 65%;
+  margin: 2px 0 0 20vw;
+  }
+  
+  /* ーーーーーーーーーーーぐるぐるーーーーーーーーー */
+  
+  #guruguru{
+      display: flex;
+      flex-direction: row-reverse;
+    position: relative;
+    width: 100%;
+   height: auto;
+    margin: 5% 0 10% 0;
+  }
+  
+  
+  #guruguru .cd{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    /* margin: 5%  0 0 0; */
+    
+  }
+  
+  #guruguru .cda{
+    width: 100%;
+    height: 30%;
+  margin: 5% 15% 0 0;
+  }
+  
+  #guruguru .kiiro {
+    transform: rotate(-15deg);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin: 20% 10% 0 0;
+  }
+  
+ 
+  
+  #guruguru .cd .mae{
+    display: none;
+  }
+  
+  #guruguru .ato {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    width: 160%;
+    max-width: none;
+    height: auto;
+  }
+  
+  #guruguru .cd .mae{
+    display: none;
+  }
+  
+  #guruguru .kyokumei a{
+    display: inline-block;
+  }
+  
+  
+  #guruguru .kyoud {
+    width: 50%;
+    max-width: 55%;
+    margin: 30px 20vw 0 20vw;
+  }
+  
+  #guruguru .yama {
+    width: 80%;
+    max-width: 85%;
+  margin:0 10vw;
+  }
+  
+  #guruguru .aino img{
+    width: 55%;
+    max-width: 60%;
+    margin: 0 20vw;
+   
+  }
+  
+  #guruguru .gomi {
+    width: 75%;
+    max-width: 80%;
+  margin: 0 15vw;
+  }
+  
+  #guruguru .guru img{
+    width: 45%;
+    max-width: 50%;
+  margin: 0 25vw;
+  }
+  
+  
+  /* ーーーーーーーーーーーーーー今日もーーーーーーーーーー */
+  
+  #kyoumo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  
+  }
+  
+  #kyoumo .cd{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    margin: 10% 0 0 45%;
+    
+  }
+  
+  #kyoumo .cda{
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    /* margin: 10% 0 0 20%; */
+    
+  }
+  
+  #kyoumo .pnk {
+    transform: rotate(15deg);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  
+  #kyoumo .ato{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 120%;
+    max-width: none;
+  }
+  
+  #kyoumo .cd .mae{
+    display: none;
+  }
+  
+  #kyoumo .kyokumei{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  
+  }
+  
+  #kyoumo .kyokumei a {
+    display: inline-block;
+  
+  }
+  
+  
+  
+  
+  #kyoumo .wata {
+    width: 68%;
+    height: auto;
+    margin: 0 18vw; 
+  }
+  
+  #kyoumo .tomo {
+    width:55%;
+    height: auto;
+    margin: 4px 23vw;
+  }
+  
+  #kyoumo .kyoum {
+    width: 30%;
+    height: auto;
+    margin:  0 25vw;
+  }
+  
+  #kyoumo .sero {
+    width: 50%;
+    height: auto;
+   margin: 0 21vw;
+  
+  }
+  
+  #kyoumo .mata {
+     width: 60%;
+     height: auto;
+  margin: 0 16vw;
+  
+  }
+  
+  
+  /* ーーーーーーーーーフッターーーーーーーーーーーーー */
+  
+  footer{
+    margin-top: 15%;
+    position: relative;
+    height: 60vw;
+   
+  }
+  
+
+  footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/haike_sumaho.png);
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+    z-index: 1;
+    pointer-events: none;
+}
+  footer .gt{
+    transform: rotate(18deg);
+     transform-origin: center;
+    width: 30vw;
+  position: absolute;
+  top: -25%;
+  right: 2%;
+  
+  }
+  
+  footer .na{
+  position: absolute;
+  top:0%;
+  right: 12%;
+  width: 35%;
+  transform: rotate(deg);
+  }
+  
+  footer .inst2{
+    display: block;
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 8%;
+    height: auto;
+    transition: transform 0.15s ease;
+  }
+  footer .inst2:active {
+  transform: scale(0.85);
+}
+
+
+footer div img:first-child{
+  position: absolute;
+  top: 18%;
+  left: 47%;
+  width: 10%;
+  height: auto;
+}
+
+
+footer div img:nth-child(2){
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 7%;
+  height: auto;
+}
+
+footer div img:nth-child(3){
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  width: 6%;
+  height: auto;
+}
+  
+  
+}
+
+
+/* ーーーーーーーーーーーパソコンーーーーーーーーーーーーーーー */
+
+
+
+@media screen and (min-width: 768px){
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+/* 画像が親要素からはみ出さないようにし、下にできる謎の隙間を消す */
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* 
+@font-face {
+  font-family: "Krona One"; 
+  src: url("KronaOne-Regular.ttf");
+} */
+
+.zenbu {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100vw;
+  height: calc(100vw * (9 / 16));
+  max-width: calc(100vh * (16 / 9));
+  max-height: 100vh;
+  container-type: inline-size;
+  margin: auto;
+  background: transparent;
+  
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../images/haikei2.jpg);
+  background-size: cover;
+  background-position: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    overflow-x: clip;
+
+}
+
+
+
+/* ヘッダーーーーーーーーーーー */
+
+.header {
+  display: flex;
+  
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25%;
+ 
+
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+
+  top: -100vh;
+  bottom: 0;
+  left: -100vw;
+  right: -100vw;
+
+  background-color: rgba(191, 174, 141, 0.3);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.logo {
+  position: absolute;
+  top: 31%;
+  left: 9%;
+  width: 4.8%;
+}
+
+.namae {
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  width: 70%;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  transform-origin: left center;
+}
+
+.namae:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+
+.inst {
+  position: absolute;
+  top: 23%;
+  left: 85%;
+  width: 4%;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.inst:hover {
+  opacity: 0.6;
+  transform: scale(1.08);
+}
+
+nav {
+  display: flex;
+  gap: 2cqw;
+  padding-left: 1cqw;
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  width: auto;
+
+}
+
+nav .nav {
+
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding-left: 1vw;
+}
+
+nav .icon {
+  height: 1.8cqw;
+  width: auto;
+  z-index: 2;
+
+  transition: transform 0.5s ease;
+}
+
+.nav:hover .icon {
+  transform: scale(1.5);
+}
+
+
+
+.nav:nth-child(4) {
+  border-right: 1px solid #000000;
+  padding-right: 3cqw;
+}
+
+.mozi {
+  z-index: 2;
+  font-size: 1.8vw;
+  border-left: 1px solid #000000;
+  padding-left: 3cqw;
+
+}
+
+.nav:hover {
+  text-decoration: underline;
+}
+
+.sumahonamae{
+ opacity: 0;
+ display: none;
+
+}
+
+
+  header .sikakunamae{
+    display: none;
+  }
+
+
+
+
+
+
+/* ---------------未練------------------------ */
+
+
+#miren .ao {
+  transform: rotate(-15deg);
+  width: 14%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+#miren .mae {
+  width: 12%;
+  position: absolute;
+  top: 41%;
+  left: 14%;
+  z-index: 2;
+}
+
+#miren .ato {
+  width: 15%;
+  position: absolute;
+  top: 37%;
+  left: 17%;
+  z-index: 1;
+  opacity: 0;
+}
+
+#miren .omoi {
+  width: 15%;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 2;
+}
+
+#miren .omoi img:nth-child(2) {
+  position: absolute;
+  top: -25%;
+  left: 83%;
+}
+
+#miren .omoi:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#miren .mire {
+  width: 12%;
+  position: absolute;
+  top: 35%;
+  left: 24%;
+  z-index: 2;
+}
+
+#miren .mire img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 75%;
+}
+
+#miren .mire:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#miren .amen {
+  width: 8%;
+  position: absolute;
+  top: 46.5%;
+  left: 29%;
+  z-index: 2;
+}
+
+#miren .amen img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 66%;
+}
+
+#miren .amen:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#miren .kimi {
+  width: 22%;
+  position: absolute;
+  top: 41%;
+  left: 26%;
+  z-index: 2;
+}
+
+#miren .kimi img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 84%;
+}
+
+#miren .kimi:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#miren .sono {
+  width: 16%;
+  position: absolute;
+  top: 52.5%;
+  left: 27%;
+  z-index: 2;
+}
+
+#miren .sono img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 80%;
+}
+
+#miren .sono:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
+
+/*------ぐるぐる ---------------------------------*/
+
+
+#guruguru .kiiro {
+  transform: rotate(70deg);
+  width: 14%;
+  position: absolute;
+  top: 62%;
+  left: 35%;
+}
+
+#guruguru .mae {
+  width: 12%;
+  position: absolute;
+  top: 58%;
+  left: 35%;
+  z-index: 2;
+}
+
+#guruguru .ato {
+  width: 17%;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  opacity: 0;
+}
+
+#guruguru .kyoud {
+  width: 11%;
+  position: absolute;
+  top: 62%;
+  left: 49%;
+  z-index: 2;
+}
+
+#guruguru .kyoud img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 70%;
+}
+
+#guruguru .kyoud:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#guruguru .yama {
+  width: 20%;
+  position: absolute;
+  top: 68%;
+  left: 51%;
+  z-index: 2;
+}
+
+#guruguru .yama img:nth-child(2) {
+  position: absolute;
+  top: -23%;
+  left: 83%;
+}
+
+#guruguru .yama:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#guruguru .aino {
+  width: 13%;
+  position: absolute;
+  top: 74%;
+  left: 52%;
+  z-index: 2;
+}
+
+#guruguru .aino img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 80%;
+}
+
+#guruguru .aino:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#guruguru .gomi {
+  width: 16%;
+  position: absolute;
+  top: 80%;
+  left: 53%;
+  z-index: 2;
+}
+
+#guruguru .gomi img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 80%;
+}
+
+#guruguru .gomi:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#guruguru .guru {
+  width: 9%;
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  z-index: 2;
+}
+
+#guruguru .guru img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 70%;
+}
+
+#guruguru .guru:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
+
+
+
+/* -----------------今日も------------------- */
+
+#kyoumo .pnk {
+  transform: rotate(15deg);
+  width: 14%;
+  position: absolute;
+  top: 33%;
+  left: 52%;
+}
+
+#kyoumo .mae {
+  width: 18%;
+  position: absolute;
+  top: 32%;
+  right: 32%;
+}
+
+#kyoumo .ato {
+  width: 13%;
+  position: absolute;
+  top: 34%;
+  right: 32%;
+  opacity: 0;
+}
+
+#kyoumo .wata {
+  width: 16%;
+  position: absolute;
+  top: 31%;
+  right: 15%;
+  z-index: 2;
+}
+
+#kyoumo .wata img:nth-child(2) {
+  position: absolute;
+  top: -23%;
+  left: 83%;
+}
+
+#kyoumo .wata:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#kyoumo .tomo {
+  width: 14%;
+  position: absolute;
+  top: 37%;
+  right: 15%;
+  z-index: 2;
+}
+
+#kyoumo .tomo img:nth-child(2) {
+  position: absolute;
+  top: -30%;
+  left: 82%;
+}
+
+#kyoumo .tomo:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#kyoumo .kyoum {
+  width: 8%;
+  position: absolute;
+  top: 42.5%;
+  right: 21%;
+  z-index: 2;
+}
+
+#kyoumo .kyoum img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 78%;
+}
+
+#kyoumo .kyoum:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#kyoumo .sero {
+  width: 12%;
+  position: absolute;
+  top: 48%;
+  right: 19%;
+  z-index: 2;
+}
+
+#kyoumo .sero img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 78%;
+}
+
+#kyoumo .sero:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+#kyoumo .mata {
+  width: 13%;
+  position: absolute;
+  top: 54%;
+  right: 16%;
+  z-index: 2;
+}
+
+#kyoumo .mata img:nth-child(2) {
+  position: absolute;
+  top: -20%;
+  left: 80%;
+}
+
+#kyoumo .mata:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* ---------------------個別--------------------- */
+
+.kyokumei a img:nth-child(2) {
+  opacity: 0;
+  width: 2.5vw;
+}
+
+.kyokumei a:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
+/* --------------フッター------------------------ */
+
+footer .gt {
+  transform: rotate(30deg);
+  width: 16%;
+  position: absolute;
+  top: 36%;
+  right: 8%;
+}
+
+footer .na {
+  width: 18%;
+  position: absolute;
+  top: 73%;
+  right: 1%;
+}
+
+
+footer div img:first-child{
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  width: 5%;
+  height: auto;
+}
+
+
+footer div img:nth-child(2){
+  position: absolute;
+  top: 66%;
+  left: 70%;
+  width: 4%;
+  height: auto;
+}
+
+footer div img:nth-child(3){
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  width: 3.5%;
+  height: auto;
+}
+
+
+
+
+
+}
+
+@media screen and (min-aspect-ratio: 2.5/1) and (min-width: 768px) {
+  /* 横幅が高さの2倍以上のときだけ */
+  nav {
+    gap: 2cqw;
+  }
+
+  nav .icon {
+    height: 2cqw;
+  }
+
+  .mozi {
+    font-size: 2cqw;
+  }
+}
+
+
+  /*-------- 正方形に近い画面だけのデザイン ----------------*/
+  
+@media screen and (min-width: 768px)
+  and (min-aspect-ratio: 4/5)
+  and (max-aspect-ratio: 4/3) {
+ 
+
+
+#miren .ao   { top: 45%; left: 10%; }
+#miren .mae  { top: 46%; left: 14%; }
+#miren .ato  { top: 42%; left: 12%; }
+
+#miren .omoi { top: 35%; left: 20%; }
+#miren .mire { top: 40%; left: 24%; }
+#miren .amen { top: 51.5%; left: 29%; }
+#miren .kimi { top: 46%; left: 26%; }
+#miren .sono { top: 57.5%; left: 27%; }
+
+
+#guruguru .kiiro { top: 73%; left: 35%; }
+#guruguru .mae   { top: 69%; left: 35%; }
+#guruguru .ato   { top: 76%; left: 35%; }
+
+#guruguru .kyoud { top: 73%; left: 49%; }
+#guruguru .yama  { top: 79%; left: 51%; }
+#guruguru .aino  { top: 85%; left: 52%; }
+#guruguru .gomi  { top: 91%; left: 53%; }
+#guruguru .guru  { top: 97%; left: 50%; }
+
+
+
+#kyoumo .pnk  { top: 38%; left: 52%; }
+#kyoumo .mae  { top: 37%; right: 32%; }
+#kyoumo .ato  { top: 39%; right: 32%; }
+
+#kyoumo .wata { top: 36%; right: 15%; }
+#kyoumo .tomo { top: 42%; right: 15%; }
+#kyoumo .kyoum { top: 47.5%; right: 21%; }
+#kyoumo .sero { top: 53%; right: 19%; }
+#kyoumo .mata { top: 59%; right: 16%; }
+
+footer .gt {
+  top: 55%;
+  right: 10%;
+}
+
+footer .na {
+  top: 92%;
+right: 3%;
+}
+
+header .namae,.logo{
+  display: none;
+}
+
+  header .sikakunamae{
+    display: block;
+    width: 70%;
+    position: absolute;
+    top: -30%;
+    left: 10%;
+  }
+
+  .sikakunamae:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+  .header .inst {
+  top: -24%;
+left: 88%;
+}
+  
+
+
+footer div img:first-child{
+  position: absolute;
+  top: 62%;
+  left: 48%;
+  width: 4%;
+  height: auto;
+}
+
+
+footer div img:nth-child(2){
+  position: absolute;
+  top: 75%;
+  left: 72%;
+  width: 3%;
+  height: auto;
+}
+
+footer div img:nth-child(3){
+  position: absolute;
+  top: 93%;
+  left: 73%;
+  width: 5%;
+  height: auto;
+}
+
+}
+

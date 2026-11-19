@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+  
+  
+ 
+  
+  /* ーーーーーーーーーーーーーーーーメインーーーーーーーーーーー */
+
+
+hr{
+  border: none;
+  border-top: 1px solid #705641;
+  width: 70%;
+  margin: 30px auto;
+}
+ 
+main p{
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.1em;
+}
+
+main{
+text-align: center;
+  margin: 10% 0 20% 0;
+}
+main h1{
+  margin-bottom: 5%;
+font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+
+
+
+
+main p:nth-child(3){
+  font-size: 15px;
+  margin: 5% 0;
+}
+
+main p:nth-child(4){
+  font-size: 11px;
+  margin: 5% 0;
+}
+main p:nth-child(5){
+  font-size: 12px;
+  margin: 5% 0;
+}
+
+}
+/* ーーーーーーーーーーーパソコンーーーーーーーーーーーーーーー */
+
+
+
+@media screen and (min-width: 768px){
+
+
+
+
+/* ----------------メイン--------------------------------- */
+
+
+hr{
+  border: none;
+  border-top: 1px solid #705641;
+  width: 45%;
+  margin: 3% auto;
+}
+
+main p{
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.1em;
+}
+
+main{
+text-align: center;
+  margin: 20% 0 20% 0;
+}
+main h1{
+  margin-bottom: 5%;
+font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+}
+
+
+
+
+main p:nth-child(3){
+  font-size: 22px;
+  margin: 5% 0;
+}
+
+main p:nth-child(4){
+  font-size: 16px;
+  margin: 5% 0;
+}
+
+
+/* ---------------------個別--------------------- */
+
+.kyokumei a img:nth-child(2) {
+  opacity: 0;
+  width: 2.5vw;
+}
+
+.kyokumei a:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+
+
+
+}
