@@ -318,8 +318,8 @@ main .kyoku {
   
   
   #miren .omoi {
-    width: 65%;
-    max-width: 70%;
+    width: 63%;
+    max-width: 69%;
     margin: 5px 15vw 0 15vw;
   }
   
@@ -339,13 +339,13 @@ main .kyoku {
   #miren .amen {
     width: 35%;
     max-width: 40%;
-  margin: 0 25vw;
+  margin: -10px 25vw 0px 25vw;
   }
   
   #miren .sono {
     width: 60%;
     max-width: 65%;
-  margin: 2px 0 0 20vw;
+  margin: 3px 0 0 20vw;
   }
   
   /* ーーーーーーーーーーーぐるぐるーーーーーーーーー */
@@ -410,26 +410,26 @@ main .kyoku {
   
   
   #guruguru .kyoud {
-    width: 50%;
+    width: 52%;
     max-width: 55%;
     margin: 30px 20vw 0 20vw;
   }
   
   #guruguru .yama {
-    width: 80%;
+    width: 90%;
     max-width: 85%;
-  margin:0 10vw;
+  margin:2% 10vw;
   }
   
   #guruguru .aino img{
-    width: 55%;
+    width: 59%;
     max-width: 60%;
     margin: 0 20vw;
    
   }
   
   #guruguru .gomi {
-    width: 75%;
+    width: 77%;
     max-width: 80%;
   margin: 0 15vw;
   }
@@ -507,7 +507,7 @@ main .kyoku {
   
   
   #kyoumo .wata {
-    width: 68%;
+    width: 65%;
     height: auto;
     margin: 0 18vw; 
   }
@@ -515,7 +515,7 @@ main .kyoku {
   #kyoumo .tomo {
     width:55%;
     height: auto;
-    margin: 4px 23vw;
+    margin: 10px 23vw;
   }
   
   #kyoumo .kyoum {
@@ -525,9 +525,9 @@ main .kyoku {
   }
   
   #kyoumo .sero {
-    width: 50%;
+    width: 46%;
     height: auto;
-   margin: 0 21vw;
+   margin: 6px 21vw;
   
   }
   
